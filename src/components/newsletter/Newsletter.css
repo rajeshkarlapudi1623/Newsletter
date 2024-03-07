@@ -1,0 +1,147 @@
+.newsletter-wrapper {
+  display: grid;
+  place-items: center;
+  padding: 23px;
+  border-radius: 35px;
+  background-color: white;
+}
+
+.newsletter {
+  display: flex;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  gap: 50px;
+}
+
+.newsletter-content_text {
+  display: flex;
+  flex-direction: column;    
+  gap: 1.5rem;
+
+}
+
+.newsletter-content_text h1 {
+  font-family: mainFontBold;
+  font-size: 3.5rem;
+  color: #222743;
+  line-height: 1;
+}
+
+.newsletter-content_text span {
+  font-family: mainFont;
+  font-size: 1rem;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.benefits p {
+  display: flex;
+  gap: 15px;    
+  font-family: mainFont;
+  font-weight: 500;
+}
+
+.email-error {
+  display: flex;
+  justify-content: space-between;    
+  width: 100%;
+}
+
+.email-error p:nth-child(2) {
+  display: none;
+  color: #c0817c;    
+}
+
+
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email-error p {
+  color: #222743;
+  font-family: mainFontBold;
+  font-size: 0.8rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.newsletter-form input {
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  font-size: 1rem;    
+}
+
+.newsletter-form input:focus {
+  outline: 1px solid #000;
+}
+
+.newsletter-form button {
+  width: 100%;
+  background-color: #232742;
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 1rem;
+  color: #fff;
+  font-family: mainFont;
+  cursor: pointer;
+}
+
+.newsletter-img {
+  display: grid;
+  place-items: center;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.newsletter-form button:hover {
+  background: linear-gradient(90deg,#FF5B62, #ff634d);   
+  box-shadow: 0 4px 8px 0 rgba(0255, 92, 100, 0.8);    
+}
+
+@media screen and (max-width: 450px) {
+  .newsletter-wrapper{
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 0;
+  }
+  
+  .image {
+      content: url("../../assets/images/illustration-sign-up-mobile.svg");
+  }
+      
+  .newsletter {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+  .newsletter-content {
+  padding: 1.5rem;
+  }
+ 
+  .newsletter-content_text h1 {
+      font-size: 2.5rem;        
+  }
+}
